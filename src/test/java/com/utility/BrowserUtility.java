@@ -6,8 +6,11 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.io.File;
 import java.io.IOException;
@@ -49,7 +52,7 @@ public class BrowserUtility {
         }
     }
 
-    public BrowserUtility(Browser browserName){
+    /*public BrowserUtility(Browser browserName){
         logger.info("Launching Browser for " +browserName);
         if(browserName == Browser.CHROME){
             WebDriverManager.chromedriver().setup();
@@ -64,7 +67,52 @@ public class BrowserUtility {
         else{
             System.err.println("Invalid Browser name,.....please enter chrome or firefox!!!!");
         }
+    }*/
+
+    public BrowserUtility(Browser browserName, boolean isHeadless){
+        logger.info("Launching Browser for " + browserName);
+        if(browserName == Browser.CHROME) {
+            WebDriverManager.chromedriver().setup();
+            if(isHeadless) {
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless"); //launch the browser in headless options
+                chromeOptions.addArguments("--window-size=1920,1080");
+                driver.set(new ChromeDriver(chromeOptions));
+            }else {
+
+                driver.set(new ChromeDriver());
+            }
+
+        } else if (browserName == Browser.FIREFOX) {
+            WebDriverManager.firefoxdriver().setup();
+            if(isHeadless){
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless=new"); //launch the browser in headless options
+                firefoxOptions.addArguments("--window-size=1920,1080");
+                firefoxOptions.addArguments("disable-gpu");
+                driver.set(new FirefoxDriver(firefoxOptions));
+            }else{
+
+                driver.set(new FirefoxDriver());
+            }
+
+        } else if (browserName == Browser.EDGE) {
+            if(isHeadless){
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--headless=new");
+                edgeOptions.addArguments("disable-gpu");
+                driver.set(new EdgeDriver(edgeOptions));
+            }
+            else {
+                WebDriverManager.edgedriver().setup();
+                driver.set(new EdgeDriver());
+            }
+        }
+        else{
+            System.err.println("Invalid Browser name,.....please enter chrome or firefox!!!!");
+        }
     }
+
     public void goToWebsite(String url){
         logger.info("Visiting the website :" + url);
         driver.get().get(url);
@@ -100,7 +148,7 @@ public class BrowserUtility {
         TakesScreenshot screenshot = (TakesScreenshot) driver.get();
         File screenShotData =screenshot.getScreenshotAs(OutputType.FILE);
         Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("DD-MM-YYYY_HH-mm-ss");
+        SimpleDateFormat format = new SimpleDateFormat("dd-MM-YYYY_HH-mm-ss");
         String timeStamp = format.format(date);
         String path = System.getProperty("user.dir")+"//screenshots//+"+name+" -"+timeStamp+".png";
         File screenShotFile = new File(path);

@@ -14,13 +14,16 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase{
     Logger logger = LoggerUtility.getLogger(this.getClass());
 
+/*
     @Test(description="Verifies with the valid user is able to login in website", groups = {"e2e","sanity"},
             dataProviderClass = com.ui.dataProviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider")
     public void loginJSONTest(User user) {
-            /*String userName = homePage.goToLoginPage()
+            */
+/*String userName = homePage.goToLoginPage()
              .doLoginWith("harsshal@gmail.com","harsshal")
              .getUserName(); ===> directly putting everyting in assertEquals
-             */
+             *//*
+
 
         assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserName(),
                 "Harshal c");
@@ -34,6 +37,7 @@ public class LoginTest extends TestBase{
                     "Harshal c");
     }
 
+*/
 
     @Test(description="Verifies with the valid user is able to login in website", groups = {"e2e","sanity"},
             dataProviderClass = com.ui.dataProviders.LoginDataProviders.class, dataProvider = "LoginTestExcelDataProvider",
