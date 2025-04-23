@@ -1,5 +1,6 @@
 package com.ui.tests;
 
+import com.constants.Browser;
 import com.ui.pages.HomePage;
 import com.utility.BrowserUtility;
 import com.utility.LambdaTestUtility;
@@ -9,34 +10,44 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
 import static com.constants.Browser.CHROME;
 
 public class TestBase {
     //All Test classes will have parent as TestBase class
-
     protected HomePage homePage;
     Logger logger = LoggerUtility.getLogger(this.getClass());
-    private boolean isLambdaTest = true;
-    private boolean isHeadless = true;
+    private boolean isLambdaTest;
 
-    @BeforeMethod(description="Load the homepage of the website")
-    public void setUp(ITestResult result){        //launching the browser
+
+    @Parameters({"browser","isLambdaTest","isHeadless"})
+    @BeforeMethod(description = "Load the homepage of the website")
+    public void setUp(
+            @Optional("chrome") String browser,
+            @Optional("false") boolean isLambdaTest,
+            @Optional("true") boolean isHeadless, ITestResult result){        //launching the browser
+
+        this.isLambdaTest = isLambdaTest;
         WebDriver lambdaDriver;
         if(isLambdaTest){
-            lambdaDriver = LambdaTestUtility.initializeLambdaTestSession("chrome",result.getMethod().getMethodName());
+            lambdaDriver = LambdaTestUtility.initializeLambdaTestSession(browser,result.getMethod().getMethodName());
             homePage = new HomePage(lambdaDriver);
         }
         else
         {
             //Running the test on local machine!!!
             logger.info("Homepage");
-            homePage = new HomePage(CHROME, isHeadless);
+            homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
         }
     }
+
 
     public BrowserUtility getInstance(){
         return homePage;
     }
+
 
     @AfterMethod(description = "Tear down the browser")
     public void tearDown(){
