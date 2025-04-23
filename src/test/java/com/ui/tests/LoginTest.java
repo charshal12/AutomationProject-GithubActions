@@ -4,18 +4,15 @@ import static com.constants.Browser.*;
 import com.ui.pages.HomePage;
 import static org.testng.Assert.*;
 import com.ui.pojos.User;
+import com.utility.LoggerUtility;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
-public class LoginTest {
-    HomePage homePage;
-
-    @BeforeMethod(description="Load the homepage of the website")
-    public void setUp(){        //launching the browser
-        homePage = new HomePage(CHROME);
-    }
-
+@Listeners({com.ui.listeners.TestListener.class})
+public class LoginTest extends TestBase{
+    Logger logger = LoggerUtility.getLogger(this.getClass());
 
     @Test(description="Verifies with the valid user is able to login in website", groups = {"e2e","sanity"},
             dataProviderClass = com.ui.dataProviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider")
