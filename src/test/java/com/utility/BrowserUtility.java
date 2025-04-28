@@ -150,7 +150,7 @@ public class BrowserUtility {
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-YYYY_HH-mm-ss");
         String timeStamp = format.format(date);
-        String path = "./screenshots/" + name + " - " + timeStamp + ".png";
+        String path = System.getProperty("user.dir")+"//screenshots//" + name + " - " + timeStamp + ".png";
         File screenShotFile = new File(path);
         try {
             FileUtils.copyFile(screenShotData,screenShotFile);
