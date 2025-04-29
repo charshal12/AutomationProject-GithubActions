@@ -11,11 +11,18 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Creating the wrapper methods to use methods in entire script.
@@ -26,6 +33,9 @@ public class BrowserUtility {
     //Heap Memory: non static variables created in the class is instance variabe
     //Made Threadlocal variable to make it threadsafe
     Logger logger = LoggerUtility.getLogger(this.getClass());
+
+    Wait<WebDriver> wait = new WebDriverWait(driver.get(), Duration.ofSeconds(10));
+
     //getter
     public WebDriver getDriver() {
         return driver.get();
@@ -35,6 +45,7 @@ public class BrowserUtility {
         super();
         this.driver.set(driver);
     }
+
 
     //Constructer for getting a browsername
     public BrowserUtility(String browserName){
@@ -137,11 +148,37 @@ public class BrowserUtility {
         element.sendKeys(text);
     }
 
+    public List<String> getAllVisibleText(By locator){
+        logger.info("Finding All Elements with the locator " + locator);
+        List<WebElement> elementList = driver.get().findElements(locator);
+        logger.info("Element Found and now printing the list in elements: ");
+
+        List<String> visibleTextList = new ArrayList<String>();
+
+        for(WebElement element : elementList) {
+            System.out.println(getVisibleText(element));
+            visibleTextList.add(getVisibleText(element));
+        }
+            return visibleTextList;
+        }
+
+    public void enterSpecialKey(By locator, Keys keyToEnter){
+        logger.info("Finding Element with the locator " + locator);
+        WebElement element = driver.get().findElement(locator);
+        logger.info("Element Found and now enter the special key " + keyToEnter);
+        element.sendKeys(keyToEnter);
+    }
+
     public String getVisibleText(By locator){
         logger.info("Finding Element with the locator " + locator);
         WebElement element = driver.get().findElement(locator);
         logger.info("Element Found and now returning the value "+element.getText());
        return element.getText();
+    }
+
+    public String getVisibleText(WebElement element){
+        logger.info("Return the visible Text" + element.getText());
+        return element.getText();
     }
 
     public String takeScreenShot(String name){
@@ -158,5 +195,26 @@ public class BrowserUtility {
             throw new RuntimeException(e);
         }
         return path;
+    }
+
+    public void waitForElement(By locator){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public void selectFromDropdown(By locator, String optionToSelect){
+        logger.info("Finding All Elements with the locator " + locator);
+
+        WebElement element = driver.get().findElement(locator);
+        Select select = new Select(element);
+        logger.info("Selecting the option  " + optionToSelect);
+        select.selectByVisibleText(optionToSelect);
+
+    }
+
+    public void clearText(By locator){
+        logger.info("Finding Element with the locator " + locator);
+        WebElement element = driver.get().findElement(locator);
+        logger.info("Element Found and Clearing Textbox field");
+        element.clear();
     }
 }

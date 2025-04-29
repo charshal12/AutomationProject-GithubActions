@@ -1,19 +1,40 @@
-2025-04-28 16:42:17 [main] INFO com.ui.listeners.TestListener::onStart::55 Test Suite Started 
-2025-04-28 16:42:17 [main] INFO com.ui.tests.LoginTestForInvalidCreds::setUp::41 Homepage 
-2025-04-28 16:42:17 [main] INFO com.ui.pages.HomePage::<init>::73 Launching Browser for CHROME 
-2025-04-28 16:42:18 [main] INFO com.ui.pages.HomePage::goToWebsite::117 Visiting the website :http://www.automationpractice.pl/index.php? 
-2025-04-28 16:42:23 [main] INFO com.ui.listeners.TestListener::onTestStart::25 loginTestInvalidCredentials 
-2025-04-28 16:42:23 [main] INFO com.ui.listeners.TestListener::onTestStart::26 Verify if the proper error message is shown for the user when they enter invalid credentials 
-2025-04-28 16:42:23 [main] INFO com.ui.pages.HomePage::goToLoginPage::31 Trying to perform the click to go to sign in page 
-2025-04-28 16:42:23 [main] INFO com.ui.pages.HomePage::clickOn::127 Finding Element with the locator By.xpath: //a[@title='Log in to your customer account'] 
-2025-04-28 16:42:23 [main] INFO com.ui.pages.HomePage::clickOn::129 Element Found and now performing click 
-2025-04-28 16:42:24 [main] INFO com.ui.pages.LoginPage::enterText::134 Finding Element with the locator By.xpath: //input[@id='email'] 
-2025-04-28 16:42:24 [main] INFO com.ui.pages.LoginPage::enterText::136 Element Found and now Enter the text Hobo@gmail.com 
-2025-04-28 16:42:24 [main] INFO com.ui.pages.LoginPage::enterText::134 Finding Element with the locator By.xpath: //input[@id='passwd'] 
-2025-04-28 16:42:24 [main] INFO com.ui.pages.LoginPage::enterText::136 Element Found and now Enter the text QWERTY!1234 
-2025-04-28 16:42:24 [main] INFO com.ui.pages.LoginPage::clickOn::127 Finding Element with the locator By.xpath: //button[@id='SubmitLogin'] 
-2025-04-28 16:42:24 [main] INFO com.ui.pages.LoginPage::clickOn::129 Element Found and now performing click 
-2025-04-28 16:42:25 [main] INFO com.ui.pages.LoginPage::getVisibleText::141 Finding Element with the locator By.xpath: //div[@class="alert alert-danger"]/ol/li 
-2025-04-28 16:42:25 [main] INFO com.ui.pages.LoginPage::getVisibleText::143 Element Found and now returning the value Authentication failed. 
-2025-04-28 16:42:25 [main] INFO com.ui.listeners.TestListener::onTestSuccess::31 loginTestInvalidCredentials PASSED 
-2025-04-28 16:42:25 [main] INFO com.ui.listeners.TestListener::onFinish::60 Test Suite Finished 
+2025-04-29 17:01:45 [main] INFO com.ui.tests.AddNewFirstAddressTest::setUp::41 Homepage 
+2025-04-29 17:01:45 [main] INFO com.ui.pages.HomePage::<init>::84 Launching Browser for CHROME 
+2025-04-29 17:01:47 [main] INFO com.ui.pages.HomePage::goToWebsite::128 Visiting the website :http://www.automationpractice.pl/index.php? 
+2025-04-29 17:01:54 [main] INFO com.ui.pages.HomePage::goToLoginPage::31 Trying to perform the click to go to sign in page 
+2025-04-29 17:01:54 [main] INFO com.ui.pages.HomePage::clickOn::138 Finding Element with the locator By.xpath: //a[@title='Log in to your customer account'] 
+2025-04-29 17:01:54 [main] INFO com.ui.pages.HomePage::clickOn::140 Element Found and now performing click 
+2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::145 Finding Element with the locator By.xpath: //input[@id='email'] 
+2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::147 Element Found and now Enter the text harsshal@gmail.com 
+2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::145 Finding Element with the locator By.xpath: //input[@id='passwd'] 
+2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::147 Element Found and now Enter the text harsshal 
+2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::clickOn::138 Finding Element with the locator By.xpath: //button[@id='SubmitLogin'] 
+2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::clickOn::140 Element Found and now performing click 
+2025-04-29 17:01:56 [main] INFO com.ui.pages.MyAccountPage::clickOn::138 Finding Element with the locator By.xpath: //a[@title='Add my first address'] 
+2025-04-29 17:01:56 [main] INFO com.ui.pages.MyAccountPage::clickOn::140 Element Found and now performing click 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: company 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text Bauch Inc 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: address1 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 56880 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: address2 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 7310 Bill Views 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: city 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text West Alanborough 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: postcode 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 43828 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: phone 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 650.856.6220 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: phone_mobile 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text (410) 424-4845 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::clearText::215 Finding Element with the locator By.id: other 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::clearText::217 Element Found and Clearing Textbox field 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: other 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text Address ALias 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: alias 
+2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text Office Address 
+2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::selectFromDropdown::205 Finding All Elements with the locator By.id: id_state 
+2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::selectFromDropdown::209 Selecting the option  Tennessee 
+2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::clickOn::138 Finding Element with the locator By.id: submitAddress 
+2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::clickOn::140 Element Found and now performing click 
+2025-04-29 17:01:59 [main] INFO com.ui.pages.AddressPage::getVisibleText::173 Finding Element with the locator By.tagName: h3 
+2025-04-29 17:01:59 [main] INFO com.ui.pages.AddressPage::getVisibleText::175 Element Found and now returning the value MY ADDRESSOFFICE ADDRESS 

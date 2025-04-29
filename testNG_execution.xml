@@ -4,6 +4,8 @@
     <test name="UI Automation Test">
         <classes>
             <class name="com.ui.tests.LoginTest"/>
+            <class name="com.ui.tests.SearchProductTest"/>
+            <class name="com.ui.tests.LoginTestForInvalidCreds"/>
         </classes>
     </test>
 </suite>
