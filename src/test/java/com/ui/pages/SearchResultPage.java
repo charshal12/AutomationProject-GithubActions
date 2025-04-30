@@ -2,7 +2,6 @@ package com.ui.pages;
 
 import com.utility.BrowserUtility;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Arrays;
@@ -30,10 +29,14 @@ private static final By INVALID_PRODUCT_ERROR = By.xpath("//div[@id='center_colu
     }
 
     public String SearchResultPageForInvalidProduct(String productName){
-        waitForElement(INVALID_PRODUCT_ERROR);
+        //waitForElement(INVALID_PRODUCT_ERROR);
         String result = getVisibleText(INVALID_PRODUCT_ERROR);
         return result;
     }
 
-
+    public ProductDetailPage clickOnTheProductAtIndex(int index){
+        clickOn(getAllElements(ALL_PRODUCT_LISTS_NAME).get(index));
+        ProductDetailPage productDetailPage = new ProductDetailPage(getDriver());
+        return productDetailPage;
+    }
 }

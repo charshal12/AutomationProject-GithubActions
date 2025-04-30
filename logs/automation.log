@@ -1,40 +1,39 @@
-2025-04-29 17:01:45 [main] INFO com.ui.tests.AddNewFirstAddressTest::setUp::41 Homepage 
-2025-04-29 17:01:45 [main] INFO com.ui.pages.HomePage::<init>::84 Launching Browser for CHROME 
-2025-04-29 17:01:47 [main] INFO com.ui.pages.HomePage::goToWebsite::128 Visiting the website :http://www.automationpractice.pl/index.php? 
-2025-04-29 17:01:54 [main] INFO com.ui.pages.HomePage::goToLoginPage::31 Trying to perform the click to go to sign in page 
-2025-04-29 17:01:54 [main] INFO com.ui.pages.HomePage::clickOn::138 Finding Element with the locator By.xpath: //a[@title='Log in to your customer account'] 
-2025-04-29 17:01:54 [main] INFO com.ui.pages.HomePage::clickOn::140 Element Found and now performing click 
-2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::145 Finding Element with the locator By.xpath: //input[@id='email'] 
-2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::147 Element Found and now Enter the text harsshal@gmail.com 
-2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::145 Finding Element with the locator By.xpath: //input[@id='passwd'] 
-2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::enterText::147 Element Found and now Enter the text harsshal 
-2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::clickOn::138 Finding Element with the locator By.xpath: //button[@id='SubmitLogin'] 
-2025-04-29 17:01:55 [main] INFO com.ui.pages.LoginPage::clickOn::140 Element Found and now performing click 
-2025-04-29 17:01:56 [main] INFO com.ui.pages.MyAccountPage::clickOn::138 Finding Element with the locator By.xpath: //a[@title='Add my first address'] 
-2025-04-29 17:01:56 [main] INFO com.ui.pages.MyAccountPage::clickOn::140 Element Found and now performing click 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: company 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text Bauch Inc 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: address1 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 56880 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: address2 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 7310 Bill Views 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: city 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text West Alanborough 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: postcode 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 43828 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: phone 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text 650.856.6220 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: phone_mobile 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text (410) 424-4845 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::clearText::215 Finding Element with the locator By.id: other 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::clearText::217 Element Found and Clearing Textbox field 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: other 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text Address ALias 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::145 Finding Element with the locator By.id: alias 
-2025-04-29 17:01:57 [main] INFO com.ui.pages.AddressPage::enterText::147 Element Found and now Enter the text Office Address 
-2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::selectFromDropdown::205 Finding All Elements with the locator By.id: id_state 
-2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::selectFromDropdown::209 Selecting the option  Tennessee 
-2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::clickOn::138 Finding Element with the locator By.id: submitAddress 
-2025-04-29 17:01:58 [main] INFO com.ui.pages.AddressPage::clickOn::140 Element Found and now performing click 
-2025-04-29 17:01:59 [main] INFO com.ui.pages.AddressPage::getVisibleText::173 Finding Element with the locator By.tagName: h3 
-2025-04-29 17:01:59 [main] INFO com.ui.pages.AddressPage::getVisibleText::175 Element Found and now returning the value MY ADDRESSOFFICE ADDRESS 
+2025-04-30 18:04:46 [main] INFO com.ui.tests.ProductCheckoutTest::setUp::41 Homepage 
+2025-04-30 18:04:46 [main] INFO com.ui.pages.HomePage::<init>::92 Launching Browser for CHROME 
+2025-04-30 18:04:48 [main] INFO com.ui.pages.HomePage::goToWebsite::149 Visiting the website :http://www.automationpractice.pl/index.php? 
+2025-04-30 18:04:53 [main] INFO com.ui.pages.HomePage::goToLoginPage::31 Trying to perform the click to go to sign in page 
+2025-04-30 18:04:53 [main] INFO com.ui.pages.HomePage::clickOn::159 Finding Element with the locator By.xpath: //a[@title='Log in to your customer account'] 
+2025-04-30 18:04:53 [main] INFO com.ui.pages.HomePage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.LoginPage::enterText::180 Finding Element with the locator By.xpath: //input[@id='email'] 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.LoginPage::enterText::183 Element Found and now Enter the text harsshal@gmail.com 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.LoginPage::enterText::180 Finding Element with the locator By.xpath: //input[@id='passwd'] 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.LoginPage::enterText::183 Element Found and now Enter the text harsshal 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.LoginPage::clickOn::159 Finding Element with the locator By.xpath: //button[@id='SubmitLogin'] 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.LoginPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:04:54 [main] INFO com.ui.pages.MyAccountPage::enterText::180 Finding Element with the locator By.id: search_query_top 
+2025-04-30 18:04:55 [main] INFO com.ui.pages.MyAccountPage::enterText::183 Element Found and now Enter the text Printed Summer Dress 
+2025-04-30 18:04:55 [main] INFO com.ui.pages.MyAccountPage::enterSpecialKey::209 Finding Element with the locator By.id: search_query_top 
+2025-04-30 18:04:55 [main] INFO com.ui.pages.MyAccountPage::enterSpecialKey::212 Element Found and now enter the special key  
+2025-04-30 18:04:56 [main] INFO com.ui.pages.SearchResultPage::getAllElements::202 Finding All Elements with the locator By.xpath: //h5[@itemprop='name']/a 
+2025-04-30 18:04:56 [main] INFO com.ui.pages.SearchResultPage::getAllElements::204 Element Found and now printing the list in elements:  
+2025-04-30 18:04:56 [main] INFO com.ui.pages.SearchResultPage::clickOn::167 Element Found and now performing click 
+2025-04-30 18:04:57 [main] INFO com.ui.pages.ProductDetailPage::selectFromDropdown::250 Finding All Elements with the locator By.id: group_1 
+2025-04-30 18:04:57 [main] INFO com.ui.pages.ProductDetailPage::selectFromDropdown::254 Selecting the option  L 
+2025-04-30 18:04:57 [main] INFO com.ui.pages.ProductDetailPage::clickOn::159 Finding Element with the locator By.xpath: //button[@name='Submit'] 
+2025-04-30 18:04:57 [main] INFO com.ui.pages.ProductDetailPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:04:57 [main] INFO com.ui.pages.ProductDetailPage::clickOn::159 Finding Element with the locator By.xpath: //a[@title='Proceed to checkout'] 
+2025-04-30 18:04:58 [main] INFO com.ui.pages.ProductDetailPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:04:59 [main] INFO com.ui.pages.ShoppingCartPage::clickOn::159 Finding Element with the locator By.xpath: //p[@class='cart_navigation clearfix']/a[@title='Proceed to checkout'] 
+2025-04-30 18:04:59 [main] INFO com.ui.pages.ShoppingCartPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:05:00 [main] INFO com.ui.pages.ConfirmAddressPage::clickOn::159 Finding Element with the locator By.xpath: //button[@name='processAddress'] 
+2025-04-30 18:05:00 [main] INFO com.ui.pages.ConfirmAddressPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:05:01 [main] INFO com.ui.pages.ShippingPage::clickOnCheckBox::172 Finding Element with the locator By.xpath: //div[@id='uniform-cgv'] 
+2025-04-30 18:05:01 [main] INFO com.ui.pages.ShippingPage::clickOnCheckBox::175 Element Found and now performing click 
+2025-04-30 18:05:01 [main] INFO com.ui.pages.ShippingPage::clickOn::159 Finding Element with the locator By.xpath: //button[@name='processCarrier'] 
+2025-04-30 18:05:01 [main] INFO com.ui.pages.ShippingPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:05:02 [main] INFO com.ui.pages.PaymentPage::clickOn::159 Finding Element with the locator By.xpath: //a[@title='Pay by bank wire'] 
+2025-04-30 18:05:02 [main] INFO com.ui.pages.PaymentPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:05:02 [main] INFO com.ui.pages.PaymentPage::clickOn::159 Finding Element with the locator By.xpath: //p[@class='cart_navigation clearfix']//button 
+2025-04-30 18:05:02 [main] INFO com.ui.pages.PaymentPage::clickOn::162 Element Found and now performing click 
+2025-04-30 18:05:09 [main] INFO com.ui.pages.PaymentPage::getVisibleText::217 Finding Element with the locator By.xpath: //p[@class='alert alert-success'] 
+2025-04-30 18:05:09 [main] INFO com.ui.pages.PaymentPage::getVisibleText::220 Element Found and now returning the value Your order on My Shop is complete. 

@@ -38,7 +38,7 @@ public class AddressPage extends BrowserUtility {
         enterText(ADDRESS_TITLE_TEXTBOX_LOCATOR,addressPOJO.getAddressAlias());
         selectFromDropdown(STATE_DROPDOWN_LOCATOR,addressPOJO.getState());
         clickOn(SAVE_ADDRESS_BTN_LOCATOR);
-        waitForElement(ADDRESS_HEADING);
+        //waitForElement(ADDRESS_HEADING);
         String newAddress = getVisibleText(ADDRESS_HEADING);
         return newAddress;
     }
