@@ -1,17 +1,30 @@
 🚀 Automation Test Project with GitHub Actions
 <p align="center"> <!-- Custom Logo --> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/logo.png" alt="Automation Project Logo" width="200" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Java-17%2B-blue?logo=java" alt="Java" /> <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium" alt="Selenium" /> <img src="https://img.shields.io/badge/TestNG-Framework-yellow?logo=testng" alt="TestNG" /> <img src="https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apache-maven" alt="Maven" /> <img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="MIT" /> <img src="https://github.com/charshal12/AutomationProject-GithubActions/actions/workflows/main.yml/badge.svg" alt="CI/CD Status" /> </p>
-
 📖 Table of Contents
 Project Overview
+
 Motivation & Learning
+
 Key Features
+
 Technology Stack
+
 Project Structure
+
 How to Run
+
 Reports & Visuals
+
 Architecture & Design
+
 Key Dependencies & Plugins
+
 What I Learned
+
+Contributing
+
+License
+
 Contact
 
 📋 Project Overview
@@ -19,24 +32,37 @@ AutomationProject-GithubActions is a scalable, hybrid UI automation framework fo
 It leverages Java, Selenium WebDriver, and TestNG, and is fully integrated with GitHub Actions for seamless CI/CD.
 
 Why is this project special?
+
 Demonstrates advanced test automation design, robust reporting, and real-world CI/CD integration.
+
 Built to be maintainable, extensible, and production-ready.
 
 🎯 Motivation & Learning
 I built this project to:
+
 Deepen my expertise in test automation frameworks and DevOps workflows.
+
 Apply design patterns (Page Object Model, Singleton) in a real-world scenario.
+
 Automate the entire testing pipeline using GitHub Actions.
+
 Practice Test-Driven Development (TDD) and professional software engineering practices.
 
 ✨ Key Features
 🚦 Hybrid Framework: Data-driven + keyword-driven for flexibility
+
 🧩 Page Object Model: Clean code separation for maintainability
+
 🗝️ Singleton Pattern: Efficient resource management
+
 🌐 Cross-Browser Testing: Easily configurable
+
 ⚡ Parallel Execution: Fast feedback with TestNG
+
 📊 Rich Reporting: HTML, logs, and screenshots on failure
+
 🤖 CI/CD Integration: Automated test runs on every push/PR
+
 🔒 Extensible & Modular: Easy to add new tests, pages, or utilities
 
 🛠️ Technology Stack
@@ -47,7 +73,6 @@ TestNG	Latest	Testing Framework
 Maven	3.8+	Build & Dependency Management
 Log4j	2.x	Logging Framework
 GitHub Actions	CI/CD Workflow	Continuous Integration/Delivery
-
 📁 Project Structure
 text
 AutomationProject-GithubActions/
@@ -75,13 +100,13 @@ AutomationProject-GithubActions/
 ├── pom.xml                     # Maven project configuration
 ├── testng.xml                  # TestNG configuration
 └── .github/
-    └── workflows/              # GitHub Actions workflow definition
-    
+    └── workflows/              # GitHub Actions workflow definitions
 🏃 How to Run
-
 Prerequisites
 Java JDK 8 or higher (recommended: Java 17+)
+
 Maven 3.8.x or higher
+
 Git
 
 Installation & Execution
@@ -108,15 +133,23 @@ Add your own screenshots and GIFs inside the docs/ folder and update the URLs ab
 
 🏗️ Architecture & Design
 Design Patterns:
+
 Page Object Model: Each web page represented as a class encapsulating elements and actions.
+
 Singleton: Ensures a single instance of WebDriver and configuration management.
 
 Framework Architecture:
+
 Base Package: Contains base test classes and WebDriver setup.
+
 Pages Package: Page classes encapsulating UI elements and actions.
+
 Utils Package: Helper classes, data providers, and utilities.
+
 Tests Package: Test classes implementing test scenarios.
+
 Parallel Execution:
+
 TestNG configuration enables parallel test execution for faster feedback cycles.
 
 🗝️ Key Dependencies & Plugins
@@ -172,6 +205,24 @@ CI/CD Integration: Automating testing pipelines with GitHub Actions for continuo
 Parallel Execution: Leveraging TestNG’s parallelism to speed up test runs.
 
 Debugging & Reporting: Implementing screenshot capture and rich HTML reports to facilitate quick issue resolution.
+
+🤝 Contributing
+Contributions are welcome!
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+See CONTRIBUTING.md for more details.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 📞 Contact
 Project Maintainer: Charshal
