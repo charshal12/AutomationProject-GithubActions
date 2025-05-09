@@ -80,31 +80,34 @@ This project helped me:
 
 ## 📁 Project Structure
 AutomationProject-GithubActions/
-├── config/ # Config files
-├── logs/ # Log files
-├── screenshots/ # Failure screenshots
+├── config/                     # Config files
+├── logs/                       # Log files
+├── screenshots/                # Failure screenshots
 ├── src/
-│ ├── main/
-│ │ ├── java/ # Source code
-│ │ └── resources/ # Resources
-│ └── test/
-│ ├── java/
-│ │ └── com/
-│ │ ├── constants/
-│ │ ├── ui/
-│ │ │ ├── dataProviders/
-│ │ │ ├── listeners/
-│ │ │ ├── pages/
-│ │ │ ├── pojos/
-│ │ │ └── tests/
-│ │ └── utility/
-│ └── resources/
+│   ├── main/
+│   │   ├── java/               # Source code
+│   │   └── resources/          # Resources
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       ├── constants/
+│       │       ├── ui/
+│       │       │   ├── dataProviders/
+│       │       │   ├── listeners/
+│       │       │   ├── pages/
+│       │       │   ├── pojos/
+│       │       │   └── tests/
+│       │       └── utility/
+│       └── resources/
 ├── testData/
 ├── test-output/
 ├── pom.xml
 ├── testng.xml
 └── .github/
-└── workflows/
+    └── workflows/
+
+
+
 ## 🏃 How to Run
 
 ### 🔧 Prerequisites
