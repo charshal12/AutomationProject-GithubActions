@@ -1,7 +1,7 @@
 # 🚀 Automation Test Project with GitHub Actions
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/logo.png" alt="Automation Project Logo" width="200" />
+  <img src="https://icons8.com/icon/45062/automation" alt="Automation Project Logo" width="200" />
 </p>
 
 <p align="center">
@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium" alt="Selenium" />
   <img src="https://img.shields.io/badge/TestNG-Framework-yellow?logo=testng" alt="TestNG" />
   <img src="https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apache-maven" alt="Maven" />
+  <img src="https://img.shields.io/github/actions/workflow/status/:user/:repo/:workflow" alt="GitHub Actions" />
 </p>
 
 ---
@@ -79,6 +80,7 @@ This project helped me:
 ---
 
 ## 📁 Project Structure
+
 AutomationProject-GithubActions/
 ├── config/                     # Config files
 ├── logs/                       # Log files
@@ -130,32 +132,30 @@ mvn test
 mvn test -DsuiteXmlFile=testng.xml
 
 📊 Reports & Visuals
+
 ✅ Test Execution Screenshot
-<p align="center"> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/sample-test-execution.png" alt="Sample Test Execution" width="700" /> </p>
+<p align="center"> <img src="screenshots/+loginCSVTest -23-04-2025_17-25-38.png" alt="Sample Test Execution" width="700" /> </p>
 📄 HTML Report
-<p align="center"> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/sample-html-report.png" alt="Sample HTML Report" width="700" /> </p>
-⚙️ GitHub Actions Workflow
-<p align="center"> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/github-actions-run.gif" alt="GitHub Actions Workflow Run" width="700" /> </p>
+<p align="center"> <img src="report.html" alt="Sample HTML Report" width="700" /> </p>
+
 
 🏗️ Architecture & Design
+
 🧱 Design Patterns
 Page Object Model: Encapsulates page structure and actions
-
 Singleton: Manages WebDriver instance and configurations
 
 🏛️ Framework Architecture
 Base: Setup, base test classes
-
 Pages: UI elements and actions
-
 Utils: Helpers, data providers
-
 Tests: Implementation of test scenarios
 
 ⚡ Parallel Execution
 Configured via TestNG to speed up feedback.
 
 🗝️ Key Dependencies & Plugins
+
 📦 Core Dependencies
 | Dependency       | Purpose            |
 | ---------------- | ------------------ |
@@ -193,12 +193,14 @@ Example Snippet
 
 
 🌱 What I Learned
+
 Building maintainable, scalable hybrid automation frameworks
 Integrating CI/CD with GitHub Actions
 Speeding up tests with parallel execution
 Enhancing test visibility through rich reports and debugging tools
 
 📞 Contact
+
 Project Maintainer: charshal12
 For any inquiries, feel free to open an issue or contact via GitHub.
 
