@@ -1,5 +1,5 @@
 🚀 Automation Test Project with GitHub Actions
-<p align="center"> <!-- Custom Logo --> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/logo.png" alt="Automation Project Logo" width="200" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Java-17%2B-blue?logo=java" alt="Java" /> <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium" alt="Selenium" /> <img src="https://img.shields.io/badge/TestNG-Framework-yellow?logo=testng" alt="TestNG" /> <img src="https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apache-maven" alt="Maven" /> <img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="MIT" /> <img src="https://github.com/charshal12/AutomationProject-GithubActions/actions/workflows/main.yml/badge.svg" alt="CI/CD Status" /> </p>
+<p align="center"> <!-- Custom Logo --> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/logo.png" alt="Automation Project Logo" width="200" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Java-17%2B-blue?logo=java" alt="Java" /> <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium" alt="Selenium" /> <img src="https://img.shields.io/badge/TestNG-Framework-yellow?logo=testng" alt="TestNG" /> <img src="https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apache-maven" alt="Maven" /> <img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="MIT" /> </p>
 📖 Table of Contents
 Project Overview
 
@@ -206,24 +206,7 @@ Parallel Execution: Leveraging TestNG’s parallelism to speed up test runs.
 
 Debugging & Reporting: Implementing screenshot capture and rich HTML reports to facilitate quick issue resolution.
 
-🤝 Contributing
-Contributions are welcome!
-
-Fork the repository
-
-Create your feature branch (git checkout -b feature/amazing-feature)
-
-Commit your changes (git commit -m 'Add some amazing feature')
-
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
-See CONTRIBUTING.md for more details.
-
-
 📞 Contact
 Project Maintainer: Charshal
-Issues & Suggestions: Open an Issue
 
 This project demonstrates my ability to build scalable, maintainable automation frameworks, integrate CI/CD pipelines, and apply software engineering best practices. Thank you for reviewing my work!
