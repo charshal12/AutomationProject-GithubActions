@@ -138,7 +138,7 @@ mvn test -DsuiteXmlFile=testng.xml
 
 ✅ Test Execution Screenshot
 <p align="center">
-  <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/+loginCSVTest%20-23-04-2025_21-47-59.png" alt="Sample Test Execution" width="700" />
+  <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/loginCSVTest-09-05-2025_20-49-02.png" alt="Sample Test Execution" width="700" />
 </p>
 
 📄 HTML Report
