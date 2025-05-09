@@ -137,9 +137,13 @@ mvn test -DsuiteXmlFile=testng.xml
 📊 Reports & Visuals
 
 ✅ Test Execution Screenshot
-<p align="center"> <img src="screenshots/+loginCSVTest -23-04-2025_17-25-38.png" alt="Sample Test Execution" width="700" /> </p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/%2BloginCSVTest%20-23-04-2025_21-47-59.png"
+alt="Sample Test Execution" width="700" /></p>
+
+
 📄 HTML Report
-<p align="center"> <img src="report.html" alt="Sample HTML Report" width="700" /> </p>
+<p align="center"> <img src="https://github.com/charshal12/AutomationProject-GithubActions/blob/master/report.html" alt="Sample HTML Report" width="700" /> </p>
 
 
 🏗️ Architecture & Design
