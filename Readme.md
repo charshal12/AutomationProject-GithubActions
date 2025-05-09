@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium" alt="Selenium" />
   <img src="https://img.shields.io/badge/TestNG-Framework-yellow?logo=testng" alt="TestNG" />
   <img src="https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apache-maven" alt="Maven" />
-  <img src="https://img.shields.io/github/actions/workflow/status/:user/:repo/:workflow" alt="GitHub Actions" />
+  <img src="https://img.shields.io/github/actions/workflow/status/charshal12/AutomationProject-GithubActions/.github%2Fworkflows" alt="GitHub Actions" />
 </p>
 
 ---
