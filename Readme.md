@@ -1,7 +1,7 @@
 # 🚀 Automation Test Project with GitHub Actions
 
 <p align="center">
-  <img src="https://icons8.com/icon/45062/automation" alt="Automation Project Logo" width="200" />
+  <img src="<a href="https://www.flaticon.com/free-icons/automation" title="automation icons">Automation icons created by Freepik - Flaticon</a>" alt="Automation Project Logo" width="200" />
 </p>
 
 <p align="center">
