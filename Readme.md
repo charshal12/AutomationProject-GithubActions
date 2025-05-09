@@ -210,7 +210,3 @@ For any inquiries, feel free to open an issue or contact via GitHub.
 This project showcases robust test architecture, DevOps practices, and professional automation design.
 Would you like this version saved as a downloadable `.md` file or automatically committed to your GitHub repo?
 
-
-
-
-
