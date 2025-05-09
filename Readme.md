@@ -1,7 +1,10 @@
 # 🚀 Automation Test Project with GitHub Actions
 
 <p align="center">
-  <img src="<a href="https://github.com/charshal12/AutomationProject-GithubActions/blob/master/projectlogo/infrastructure.png" alt="Automation Project Logo" width="200" />
+ <a href="https://github.com/charshal12/AutomationProject-GithubActions/blob/master/projectlogo/infrastructure.png" target="_blank">
+  <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/projectlogo/infrastructure.png" alt="Automation Project Logo" width="200" />
+</a>
+
 </p>
 
 <p align="center">
