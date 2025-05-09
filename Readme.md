@@ -1,25 +1,55 @@
-# Automation Test Project with GitHub Actions
+🚀 Automation Test Project with GitHub Actions
+<p align="center"> <!-- Custom Logo --> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/logo.png" alt="Automation Project Logo" width="200" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Java-17%2B-blue?logo=java" alt="Java" /> <img src="https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium" alt="Selenium" /> <img src="https://img.shields.io/badge/TestNG-Framework-yellow?logo=testng" alt="TestNG" /> <img src="https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apache-maven" alt="Maven" /> <img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="MIT" /> <img src="https://github.com/charshal12/AutomationProject-GithubActions/actions/workflows/main.yml/badge.svg" alt="CI/CD Status" /> </p>
 
-[![CI/CD](https://github.com/charshal12/AutomationProject-GithubActions/actions/workflows/main.yml/badge.svg)](https://github.com/charshal12/AutomationProject-GithubActions/actions/workflows/main.yml)
+📖 Table of Contents
+Project Overview
+Motivation & Learning
+Key Features
+Technology Stack
+Project Structure
+How to Run
+Reports & Visuals
+Architecture & Design
+Key Dependencies & Plugins
+What I Learned
+Contact
 
-## 📋 Overview
+📋 Project Overview
+AutomationProject-GithubActions is a scalable, hybrid UI automation framework for e-commerce sites.
+It leverages Java, Selenium WebDriver, and TestNG, and is fully integrated with GitHub Actions for seamless CI/CD.
 
-This project is an automated testing framework for e-commerce website UI verification and validation. It implements a hybrid framework approach combining data-driven testing with OOPs concepts and design patterns including Page Object Model and Singleton pattern, following Test-Driven Development (TDD) practices.
+Why is this project special?
+Demonstrates advanced test automation design, robust reporting, and real-world CI/CD integration.
+Built to be maintainable, extensible, and production-ready.
 
-## 🛠️ Technology Stack
+🎯 Motivation & Learning
+I built this project to:
+Deepen my expertise in test automation frameworks and DevOps workflows.
+Apply design patterns (Page Object Model, Singleton) in a real-world scenario.
+Automate the entire testing pipeline using GitHub Actions.
+Practice Test-Driven Development (TDD) and professional software engineering practices.
 
-- **Programming Language:** Java
-- **Testing Framework:** TestNG
-- **Automation Tool:** Selenium WebDriver
-- **Build Tool:** Maven
-- **Logging:** Log4j
-- **CI/CD:** GitHub Actions
-- **Design Pattern:** Page Object Model, Singleton
-- **Approach:** Hybrid Framework, TDD
+✨ Key Features
+🚦 Hybrid Framework: Data-driven + keyword-driven for flexibility
+🧩 Page Object Model: Clean code separation for maintainability
+🗝️ Singleton Pattern: Efficient resource management
+🌐 Cross-Browser Testing: Easily configurable
+⚡ Parallel Execution: Fast feedback with TestNG
+📊 Rich Reporting: HTML, logs, and screenshots on failure
+🤖 CI/CD Integration: Automated test runs on every push/PR
+🔒 Extensible & Modular: Easy to add new tests, pages, or utilities
 
-## 📁 Project Structure
+🛠️ Technology Stack
+Technology	Version/Details	Description
+Java	17+	Programming Language
+Selenium WebDriver	Latest	Browser Automation
+TestNG	Latest	Testing Framework
+Maven	3.8+	Build & Dependency Management
+Log4j	2.x	Logging Framework
+GitHub Actions	CI/CD Workflow	Continuous Integration/Delivery
 
-```
+📁 Project Structure
+text
 AutomationProject-GithubActions/
 ├── config/                     # Configuration files
 ├── logs/                       # Log files generated during test execution
@@ -45,126 +75,106 @@ AutomationProject-GithubActions/
 ├── pom.xml                     # Maven project configuration
 ├── testng.xml                  # TestNG configuration
 └── .github/
-    └── workflows/              # GitHub Actions workflow definitions
-```
+    └── workflows/              # GitHub Actions workflow definition
+    
+🏃 How to Run
 
-## ✨ Features
+Prerequisites
+Java JDK 8 or higher (recommended: Java 17+)
+Maven 3.8.x or higher
+Git
 
-- **Hybrid Framework:** Combines data-driven and keyword-driven approaches
-- **Page Object Model:** Separation of page elements and test logic
-- **Singleton Pattern:** Single instance for WebDriver and configuration
-- **TDD Approach:** Test cases written before implementation
-- **Cross-Browser Testing:** Support for multiple browsers
-- **Parallel Test Execution:** Utilizing TestNG parallel capabilities
-- **Reporting:** Detailed HTML and logging reports
-- **CI/CD Integration:** Automated test execution via GitHub Actions
-- **Screenshot Capture:** On test failure
+Installation & Execution
+bash
+git clone https://github.com/charshal12/AutomationProject-GithubActions.git
+cd AutomationProject-GithubActions
+mvn clean install
+Run all tests:
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Java JDK 8 or higher
-- Maven 3.8.x or higher
-- Git
-
-### Installation
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/charshal12/AutomationProject-GithubActions.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd AutomationProject-GithubActions
-   ```
-
-3. Install dependencies:
-   ```
-   mvn clean install
-   ```
-
-### Running Tests
-
-Execute all tests:
-```
+bash
 mvn test
-```
+Run a specific TestNG suite:
 
-Execute specific test suite:
-```
-mvn test -Dsuite=testng.xml
-```
+bash
+mvn test -DsuiteXmlFile=testng.xml
+📊 Reports & Visuals
+Sample Test Execution Screenshot
+<p align="center"> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/sample-test-execution.png" alt="Sample Test Execution" width="700" /> </p>
+Sample HTML Report Screenshot
+<p align="center"> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/sample-html-report.png" alt="Sample HTML Report" width="700" /> </p>
+Sample GitHub Actions Workflow Run
+<p align="center"> <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/main/docs/github-actions-run.gif" alt="GitHub Actions Workflow Run" width="700" /> </p>
+Add your own screenshots and GIFs inside the docs/ folder and update the URLs above.
 
-## 📊 Reports
+🏗️ Architecture & Design
+Design Patterns:
+Page Object Model: Each web page represented as a class encapsulating elements and actions.
+Singleton: Ensures a single instance of WebDriver and configuration management.
 
-After test execution, reports can be found at:
-- TestNG HTML Report: `test-output/index.html`
-- Log files: `logs/`
+Framework Architecture:
+Base Package: Contains base test classes and WebDriver setup.
+Pages Package: Page classes encapsulating UI elements and actions.
+Utils Package: Helper classes, data providers, and utilities.
+Tests Package: Test classes implementing test scenarios.
+Parallel Execution:
+TestNG configuration enables parallel test execution for faster feedback cycles.
 
-## 🔄 CI/CD Pipeline
-
-This project uses GitHub Actions for continuous integration and testing. The workflow is defined in `.github/workflows/main.yml`. Tests are automatically executed on:
-
-- Push to main branch
-- Pull requests to main branch
-
-## 📝 Dependencies
-
-Major dependencies include:
-
-```xml
-<!-- From pom.xml -->
+🗝️ Key Dependencies & Plugins
+Core Dependencies
+Dependency	Purpose
+Selenium Java	Browser automation
+TestNG	Test framework
+WebDriverManager	Automatic driver management
+Log4j	Logging
+Essential Maven Plugins
+Plugin	Purpose
+Maven Surefire Plugin	Runs TestNG test suites
+Maven Compiler Plugin	Java version configuration
+Example Snippet
+xml
 <dependencies>
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-    </dependency>
-    <!-- Other dependencies as specified in pom.xml -->
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <scope>test</scope>
+  </dependency>
+  <dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+  </dependency>
 </dependencies>
-```
 
-## 📚 Documentation
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+    </plugin>
+  </plugins>
+</build>
+🌱 What I Learned
+Advanced Test Automation: Designing hybrid frameworks and applying design patterns for maintainable, scalable code.
 
-- **Design Patterns Used:**
-  - **Page Object Model:** Each page is represented as a class with elements and actions
-  - **Singleton Pattern:** Used for WebDriver and configuration management
+CI/CD Integration: Automating testing pipelines with GitHub Actions for continuous feedback.
 
-- **Framework Architecture:**
-  - **Base Package:** Contains base test class and WebDriver initialization
-  - **Pages Package:** Page classes with elements and actions
-  - **Utils Package:** Helper classes, data providers, and utilities
-  - **Tests Package:** Test classes implementing test scenarios
+Parallel Execution: Leveraging TestNG’s parallelism to speed up test runs.
 
-## 🤝 Contributing
+Debugging & Reporting: Implementing screenshot capture and rich HTML reports to facilitate quick issue resolution.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+📞 Contact
+Project Maintainer: Charshal
+Issues & Suggestions: Open an Issue
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Contact
-
-Project Maintainer: [Charshal](https://github.com/charshal12)
-
----
-
-*This README was generated for the AutomationProject-GithubActions repository.*
+This project demonstrates my ability to build scalable, maintainable automation frameworks, integrate CI/CD pipelines, and apply software engineering best practices. Thank you for reviewing my work!
