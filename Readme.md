@@ -221,8 +221,6 @@ Open a Pull Request
 
 See CONTRIBUTING.md for more details.
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 📞 Contact
 Project Maintainer: Charshal
