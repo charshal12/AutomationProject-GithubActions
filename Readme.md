@@ -140,10 +140,27 @@ mvn test -DsuiteXmlFile=testng.xml
 <p align="center">
 <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/%2BloginCSVTest%20-23-04-2025_21-47-59.png"
 alt="Sample Test Execution" width="700" /></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/%2BloginCSVTest%20-23-04-2025_21-47-59.png" alt="Sample Test Execution" width="700" />
+</p>
+![Sample Test Execution](https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/%2BloginCSVTest%20-23-04-2025_21-47-59.png)
 
 
 📄 HTML Report
-<p align="center"> <img src="https://github.com/charshal12/AutomationProject-GithubActions/blob/master/report.html" alt="Sample HTML Report" width="700" /> </p>
+<p align="center">
+  <a href="https://github.com/charshal12/AutomationProject-GithubActions/blob/master/report.html" target="_blank">
+    View Sample HTML Report
+  </a>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/report-screenshot.png" alt="Sample HTML Report" width="700" />
+</p>
+<p align="center">
+  <a href="https://github.com/charshal12/AutomationProject-GithubActions/blob/master/report.html" target="_blank">
+    <img src="https://raw.githubusercontent.com/charshal12/AutomationProject-GithubActions/master/screenshots/report-screenshot.png" alt="Sample HTML Report" width="700" />
+  </a>
+</p>
+
 
 
 🏗️ Architecture & Design
